@@ -1,18 +1,16 @@
-package gitup;
+package guvi;
 import java.util.Scanner;
 public class ass1 {
 public static void main(String[] args) {
 	System.out.println("Enter the number:");
 	Scanner scan=new Scanner(System.in);
-	int a=scan.nextInt();
-	if(a==0){
-		System.out.println("Given number is Zero");
+	char a=scan.next().charAt(0);
+	if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U'){
+		System.out.println("Enter number "+a+" is Vowel");
+		
 	}
-	else if(a<0){
-		System.out.println("Given number is Negative");
-		}
 	else{
-		System.out.println("Given number is Positive");
+		System.out.println("Enter number "+a+" is consonant");
 	}
 }
 }
